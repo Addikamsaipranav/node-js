@@ -1,0 +1,16 @@
+urlencoded()
+app.use(express.urlencoded())
+
+it will take into in the form of forms like key value pairs and parse it into json object
+
+
+2)static
+app.use(express.static('public'))
+
+->actually public is a folder in the root directory 
+--> lets say we have a file named text.text
+by using this static build in middle ware we can access the text.txt from the local host 
+save the file text.txt 
+
+localhost:3000/text.txt
+our broweser will be able to load the file in the broweser

@@ -1,0 +1,13 @@
+helmet,
+morgan
+
+->actually morgon is a third party middle ware
+npm i morgan
+
+const morgan = require("morgan")
+
+app.use(morgan('tiny'))
+
+when every time we send request to any of the endpoint in the server ,
+the morgan middleware will log information about the request in the log
+it will be very helpfull in track of the request and response and also it very easy for debuggig purpose 

@@ -1,0 +1,22 @@
+middlewares---->configartion--->debugging----->templating enginesss
+
+
+middlewares:
+1)core concepts of the express
+2)middleware or middleware functions are nothing but takes 
+request object and return a response to the request to it 
+or else it will pass control to another middleware function
+
+example of middleware function:
+router handle functions are one of the example of it 
+app.get("/",(req,res)=>{
+    //call back function is one of the middleware in express 
+})
+example-2:
+app.use(express.json())
+-->express.json() function is also a built in  middleware function where it will try to search for json object from body
+and parse into a json object with the name of req.body 
+--> after doing it , it will next head over to router() -->route handler function and after response from it
+--> response response pipeline gets ended
+
+--> we can make our own middlewares, it will gets added in the front of the response process pipeline

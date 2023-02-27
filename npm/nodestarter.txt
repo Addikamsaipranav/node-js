@@ -1,0 +1,31 @@
+commands :
+npm init --yes
+initial command to do before installing node packages into node application
+
+2)installing node application :
+go to npmjs.com
+search for underscore package 
+there you can see basic info of underscore package 
+npm i underscore --save
+node modules folder been added  and version of it been added in package.json 
+npm will install latest version of it from npm and it will store in it node_modules 
+
+
+3) deleting a package 
+ npm un #packagename
+
+4)publish your own module 
+-> npm init
+-> add index.js
+-> write code in terms of functions and try to export it 
+->npm login
+->enter username and password and email
+->after successfull login 
+->keep a npm package name in the package.json file 
+->npm publish 
+-> with in no time your npm named package will be published in the npm and it will public 
+
+
+5)updating published package
+npm version minor/major/patch
+npm publish
